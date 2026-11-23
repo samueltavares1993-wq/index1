@@ -1,0 +1,459 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fffaf5;
+    color: #333;
+}
+
+header {
+    background-color: #ff914d;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe0c7;
+}
+
+.banner {
+    min-height: 450px;
+    background: linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
+    ),
+    url("https://www.shutterstock.com/image-photo/heads-happy-cats-dogs-various-260nw-2441260005.jpg")
+    center/cover;
+
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+    color: white;
+   
+}
+
+.banner-text {
+    max-width: 550px;
+}
+
+.banner h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff914d;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e56e28;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    color: #e97935;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 35px 25px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.8s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card span {
+    font-size: 45px;
+}
+
+.card h3 {
+    color: #ff914d;
+    margin: 15px 0;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #666;
+    
+}
+
+.produtos {
+    background-color: #fff0e5;
+
+  
+}
+
+.contato {
+    background-color: #ffe0c7;
+}
+
+.contato p {
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .banner {
+        min-height: 400px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* Seção de produtos */
+.produtos {
+    background-color: #fff0e5;
+    padding: 70px 8%;
+}
+
+/* Cards de produtos */
+.produtos .card {
+    width: 280px;
+    min-height: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+
+}
+
+/* Imagens */
+.produtos .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Títulos */
+.produtos .card h3 {
+    color: #ff914d;
+    margin: 10px 0;
+}
+
+/* Descrições */
+.produtos .card p {
+    text-align: center;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* Imagens dos serviços e produtos */
+.servicos .card img,
+.produtos .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Padronização dos cards */
+.servicos .card,
+.produtos .card {
+    width: 280px;
+    min-height: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+/* Títulos */
+.servicos .card h3,
+.produtos .card h3 {
+    color: #ff914d;
+    margin: 10px 0;
+}
+
+/* Textos */
+.servicos .card p,
+.produtos .card p {
+    text-align: center;
+    line-height: 1.6;
+    color: #df4d4d;
+}
+
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(135deg, #ff914d, #f36b21);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff914d;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* INTRODUÇÃO */
+.introducao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.introducao h2 {
+    color: #d66b25;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.introducao p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* CARDS */
+.tipos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    border-bottom: 5px solid #ff914d;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    color: #d66b25;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* BENEFÍCIOS */
+.beneficios {
+    background-color: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.beneficios h2 {
+    color: #d66b25;
+    margin-bottom: 20px;
+}
+
+.beneficios ul {
+    padding-left: 25px;
+}
+
+.beneficios li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* DICA */
+.dica {
+    background-color: #ffe2cc;
+    padding: 30px;
+    margin-top: 35px;
+    border-radius: 15px;
+    border-left: 6px solid #ff914d;
+}
+
+.dica h2 {
+    color: #a64b00;
+    margin-bottom: 15px;
+}
+
+.dica p {
+    line-height: 1.8;
+    color: #520f0f;
+}
+
+/* BOTÃO VOLTAR */
+.voltar {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.voltar a {
+    display: inline-block;
+    background-color: #ff914d;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.voltar a:hover {
+    background-color: #d66b25;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+
